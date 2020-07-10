@@ -1,7 +1,7 @@
 @import "_variables";
 
 .services {
-    background-image: url(/assets/BG.png);
+    background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -23,7 +23,7 @@
                 position: absolute;
                 top: 140px;
                 content: " ";
-                background-image: url("/assets/Symbol.png");
+                background-image: url(../assets/symbol.png);
                 background-size: 28px 28px;
                 height: 28px;
                 width: 28px;
