@@ -1,0 +1,70 @@
+@import "_variables";
+
+.services {
+    background-image: url(/assets/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 1312px;
+    color: #fff;
+    margin-bottom: -150px;
+
+    &__header {
+        position: relative;
+        opacity: 0;
+        transition: all 0.8s;
+        h1 {
+            padding: 180px 140px 40px 140px;
+            font-weight: 900;
+            font-size: 48px;
+            margin: 0;
+            &:before {
+                display: block;
+                position: absolute;
+                top: 140px;
+                content: " ";
+                background-image: url("/assets/Symbol.png");
+                background-size: 28px 28px;
+                height: 28px;
+                width: 28px;
+            }
+        }
+    }
+    &__container {
+        padding: 0 170px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        &__item {
+            max-width: 450px;
+            margin: 70px auto;
+        }
+    }
+    &__icon {
+        opacity: 0;
+        transform: translateY(100vh);
+        transition: all 1s;
+        img {
+            height: auto;
+            width: 50px;
+        }
+    }
+    &__name {
+        font-size: 32px;
+        font-weight: bold;
+        padding: 15px 0 40px 0;
+        transform: translateY(100vh);
+        transition: all 1.5s;
+        opacity: 0;
+    }
+    &__description {
+        color: $description-color;
+        letter-spacing: 2px;
+        font-weight: 100;
+        word-spacing: 2px;
+        transform: translateY(100vh);
+        transition: all 2.5s;
+        opacity: 0;
+    }
+}

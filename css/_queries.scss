@@ -1,0 +1,124 @@
+@media (max-width: 1260px) {
+    .services__container {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .services {
+        margin-bottom: 0;
+        &__container {
+            padding: 0 60px;
+        }
+    }
+    .document__photo img {
+        left: -90px;
+    }
+}
+
+@media (max-width: 850px) {
+    .document {
+        margin: 0;
+        transform: translateY(0) !important;
+        transform: translate3d(0) !important;
+        &__name {
+            flex: 25%;
+        }
+        &__text {
+            flex: 25%;
+        }
+        &__photo {
+            flex: 50%;
+            img {
+                max-width: 500px;
+            }
+        }
+        &__download {
+            left: 45px;
+            bottom: -115px;
+        }
+    }
+    footer {
+        margin: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        &__header h1:before {
+            top: 80px;
+        }
+        &__container {
+            padding: 0;
+            &__item {
+                margin: 30px;
+                max-width: auto;
+            }
+        }
+
+        &__header h1 {
+            padding: 120px 30px 20px 30px;
+        }
+    }
+
+    .document {
+        padding: 0 30px;
+    }
+    footer {
+        margin: 120px 30px 50px 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .services__header h1,
+    footer {
+        font-size: 30px;
+    }
+    .services__container {
+        padding-bottom: 70px;
+    }
+    .services__name {
+        font-size: 22px;
+    }
+    .document {
+        min-height: 411px;
+        background-size: auto;
+        background-color: $secondary-color;
+        background-position-y: bottom;
+        background-position-x: -135px;
+
+        &__container {
+            flex-wrap: wrap;
+        }
+        &__name {
+            flex: 80%;
+            h2 {
+                font-size: 22px;
+                transform: translateY(20px);
+            }
+        }
+        &__text {
+            font-size: 16px;
+            transform: translateY(30px);
+        }
+        &__photo {
+            flex: 5%;
+            img {
+                left: -175px;
+                top: -325px;
+            }
+        }
+        &__download {
+            left: 0;
+            right: 0;
+            bottom: -160px;
+            margin: auto;
+            &__btn {
+                display: block;
+                height: 55px;
+                width: 280px;
+                font-size: 16px;
+            }
+        }
+    }
+}

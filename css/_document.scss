@@ -1,0 +1,76 @@
+@import "_variables.scss";
+
+.document {
+    background-image: url(/assets/Symbol_Docs.png);
+    background-position: left;
+    min-height: 311px;
+    padding: 0 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 135px;
+    position: relative;
+    &__container {
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        align-items: center;
+        opacity: 0;
+        transition: 1.5s;
+    }
+    &__name {
+        flex: 40%;
+        padding: 5px;
+        h2 {
+            font-size: 32px;
+            font-weight: 800;
+            transform: translateY(-55px);
+        }
+    }
+    &__text {
+        font-size: 24px;
+        flex: 35%;
+        padding: 5px;
+    }
+    &__photo {
+        flex: 15%;
+        position: relative;
+        img {
+            position: absolute;
+            top: -240px;
+            left: 0;
+        }
+    }
+    &__download {
+        position: absolute;
+        bottom: -130px;
+        left: 75px;
+
+        &__btn {
+            margin: 0 auto;
+            font-size: 22px;
+            font-weight: bold;
+            height: 75px;
+            width: 390px;
+            background-color: $btn-color;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: $main-color;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+            &:hover {
+                border-radius: 50px;
+                transform: scale(0.98);
+                letter-spacing: 8px;
+            }
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+}
